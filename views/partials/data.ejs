@@ -1,0 +1,36 @@
+
+
+<div class="left-side">
+    <header>
+        <h1>Task List.....</h1>
+    </header>
+   <div class="list">
+	<form action="/todo" method="get">
+		<ul id="parent">
+			<% data.forEach((item) => { %>
+				<% let checked = item.checked ? 'checked' : "" %>
+			<li class="task <%= checked%>" id= "<%= item.id%>""  >
+				<span class="task-title" required><%= item.todo %></span>
+				<img src="<%= item.profilePic %>" required/>
+				<div class="icons">
+					<input type="checkbox" <%= checked %> class =
+					"checkbox" onclick="addChecked(this)"/>
+					<img src="bin.png" id="remove-btn" onclick="deleteTodo(this)" />
+				</div>
+			</li>
+			<%})%>
+		</ul>
+	</form>
+</div>
+</div>
+
+<!-- right side of the page -->
+<div class="text-area">
+	<h1>Task Form...</h1>
+	<form method="post" action="/todo" enctype="multipart/form-data">
+    <input type="text" name="textarea" id="textarea" placeholder="I need to..."/>
+		<input type="file" name="profilePic" id="profilePic" accept="image/*">
+		<input type="submit" value="Submit" id="submitTodo">
+	</form>
+</div>
+<script src="/js/script.js"></script>

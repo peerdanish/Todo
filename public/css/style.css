@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Segoe UI', sans-serif;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(231, 231, 231);
+	width: 1400px;
+	margin: 0 auto;
+}
+
+#logout-area {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	justify-content: flex-end;
+	margin-right: 2rem;
+}
+a {
+	text-decoration: none;
+}
+.username {
+	margin-right: 2rem;
+	font-size: 2rem;
+	text-transform: capitalize;
+	padding-right: 10px;
+	font-weight: bolder;
+}
+.logout-button {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	padding: 10px;
+	font-weight: bold;
+	background-color: gold;
+	cursor: pointer;
+	margin-top: 5px;
+	color: black;
+	outline: 2px solid black;
+}
+
+main {
+	display: flex;
+}
+.left-side {
+	width: 50%;
+	height: 80vh;
+	overflow-y: scroll;
+	padding-top: 1rem;
+}
+.left-side header {
+	width: 70%;
+	margin: 0 auto;
+	color: rgb(53, 53, 53);
+}
+.list ul {
+	width: 70%;
+	margin: 0 auto;
+}
+.list ul li {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid gray;
+	padding: 10px;
+	font-size: 1.3rem;
+}
+
+.text-area {
+	width: 50%;
+}
+
+#remove-btn {
+	scale: 0.4;
+}
+#remove-btn:hover {
+	cursor: pointer;
+}
+.checked span {
+	text-decoration: line-through;
+	opacity: 0.6;
+}
+input[type='checkbox'] {
+	width: 15px;
+	height: 15px;
+	accent-color: green;
+	cursor: pointer;
+	border-radius: 0px;
+	margin-right: 20px;
+}
+.list img {
+	width: 40px;
+	height: 40px;
+}
+.text-area h1 {
+	color: rgb(53, 53, 53);
+	padding: 1rem;
+}
+.text-area form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#textarea {
+	width: 60%;
+	padding: 0.6em;
+	margin-bottom: 1em;
+	border: none;
+	background-color: rgb(163, 212, 218);
+}
+#profilePic {
+	width: 60vh;
+	margin-bottom: 1em;
+}
+#submitTodo {
+	width: 80px;
+	height: 30px;
+	background-color: rgb(32, 135, 246);
+	border: none;
+	color: white;
+	/* font-size: 1.1rem; */
+	font-weight: bold;
+}
+.task {
+	display: flex;
+	align-items: center;
+}
+.icons {
+	display: flex;
+	align-items: center;
+}
